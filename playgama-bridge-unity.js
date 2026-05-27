@@ -136,14 +136,14 @@ function initializeBridge() {
             bridge.platform.on('pause_state_changed', isPaused => sendMessageToUnity('OnPauseStateChanged', isPaused.toString()))
 
             let unityLoader = document.createElement('script')
-            unityLoader.src = 'Build/ls6.loader.js'
+            unityLoader.src = 'Build/ls7runtime.loader.js'
             unityLoader.onload = () => {
                 createUnityInstance(
                     CANVAS,
                     {
-                        dataUrl: 'Build/ls6.data.br',
-                        frameworkUrl: 'Build/ls6.framework.js.br',
-                        codeUrl: 'Build/ls6.wasm.br',
+                        dataUrl: 'Build/ls7runtime.data.unityweb',
+                        frameworkUrl: 'Build/ls7runtime.framework.js.unityweb',
+                        codeUrl: 'Build/ls7runtime.wasm.unityweb',
                         streamingAssetsUrl: 'StreamingAssets',
                         companyName: 'DincridGames',
                         productName: 'LaserSlasher',
