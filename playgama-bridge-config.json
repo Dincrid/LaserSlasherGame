@@ -1,0 +1,31 @@
+{
+  "advertisement": {
+    "useBuiltInErrorPopup": true,
+    "interstitial": {
+      "placements": [
+        {
+          "id": "interstitialID"
+        }
+      ],
+      "preloadOnStart": true
+    },
+    "rewarded": {
+      "placements": [
+        {
+          "id": "rewardedID"
+        }
+      ],
+      "preloadOnStart": true
+    },
+    "banner": {
+      "placements": [
+        {
+          "id": "bannerID"
+        }
+      ],
+      "preloadOnStart": true
+    }
+  },
+  "sendAnalyticsEvents": true,
+  "disableLoadingLogo": true
+}
